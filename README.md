@@ -5,6 +5,14 @@
 [京都大学黒橋研究室](https://nlp.ist.i.kyoto-u.ac.jp/?JUMAN%2B%2B)が開発した形態素解析器
 alpine(とにかく軽いイメージを利用したい時)とdebian(Pythonなどもコンテナに導入したい場合)の二つの環境を用意した。マルチステージビルドを利用して極力軽いイメージに仕上げています。
 
+### インストール
+```bash
+# alpineの場合
+docker pull schnell3526/jumanpp:alpine
+# debianの場合
+docker pull schnell3526/jumanpp:debian
+```
+
 ### 利用法
 
 ホスト環境で以下のコマンドを実行すれば対話型モードに入れる

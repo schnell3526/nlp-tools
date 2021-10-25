@@ -32,3 +32,7 @@ RUN cd "jumanpp-${JPP_VERSION}" \
 FROM alpine:3.14
 COPY --from=builder /usr/local/bin /usr/local/bin
 COPY --from=builder /usr/local/libexec /usr/local/libexec
+
+RUN apk --no-cache add libstdc++
+
+CMD [ "jumanpp" ]

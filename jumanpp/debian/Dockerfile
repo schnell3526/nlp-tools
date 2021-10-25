@@ -32,3 +32,5 @@ RUN cd "jumanpp-${JPP_VERSION}" \
 FROM debian:buster-slim
 COPY --from=builder /usr/local/bin /usr/local/bin
 COPY --from=builder /usr/local/libexec /usr/local/libexec
+
+CMD [ "jumanpp" ]

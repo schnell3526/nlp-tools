@@ -9,4 +9,6 @@ COPY --from=jumanpp /usr/local/libexec/jumanpp/ /usr/local/libexec/jumanpp/
 
 RUN pip install pyknp
 
-CMD [ "bash" ]
+WORKDIR /work
+
+CMD [ "python", "pyknp_test.py" ]
